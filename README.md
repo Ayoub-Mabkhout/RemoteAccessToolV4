@@ -40,4 +40,6 @@ This API was developped with a Code-First approach:
 2. CD into the root directory and start the server with the following command: `./gradlew bootRun`.
    - Alternatively, you could cd to `src\\main\\java\\com\\RemoteAccessTool\\` and run the command `java RemoteAccessToolApplication.java`
 3. Once the server started, it should be hosted in port 8080
-4. CD into `src\\consumers\\js\\` and run `node index.js` to start the client. Before that, make sure the dependencies are installed by running `npmm install` in the directory. The client will attempt to connect to [`http://localhost:8080/`](http://localhost:8080/). You can change the URL with that of the remote server if it is not executing locally.
+4. CD into `src\\consumers\\browser\\` and run `node index.js` to start the client. Before that, make sure the dependencies are installed by running `npmm install` in the directory. 
+5. You will need to change the URL to match that of the server. This step is necessary even if the server is running locally.
+6. Alternatively, you can enter the root URL of the server prefixed by `http://` and follow by `/`, the browser-based consumer will be server by SpringBoot a static files since it is also located in `src/main/resources/public/`
