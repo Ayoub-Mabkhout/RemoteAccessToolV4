@@ -1,4 +1,4 @@
-# RemoteAccessToolV3: OpenAPI
+# RemoteAccessToolV4: Reactive Screenshots
 OpenAPI Remote Server in Java and a browser-based consumer. This is a repository for a programming assignment in my 
 "CSC 3374 Advanced & Distributed Programming Paradigms"course as part of the chapter on "Programming for Reactivity".
 
@@ -13,6 +13,8 @@ OpenAPI Remote Server in Java and a browser-based consumer. This is a repository
 The project consist of a client program and a server program accessible remotely through the client. From the client, a user can 
 issue one of 3 commands. Either (1) take a screenshot of the main screen,
 (2) record and send a list of all processes running on the Server machine, or (3) reboot the server machine.
+
+The only feature that will be used by the consumer is the screnshot feature.
 
 This implementation should work on both Windows and Unix based machines.
 
